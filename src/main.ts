@@ -121,7 +121,7 @@ console.log(
 );
 
 // Apartado 2 - Queremos activar el protocolo de urgencia si cualquiera de los pacientes tiene un ritmo cardíaco superior a 100 pulsaciones por minuto y una temperatura corporal superior a 39 grados.
-const activarProtocoloUrgenciaWhile = (pacientes: Pacientes[]): boolean => {
+const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
   let activarProtocolo = false;
   let i = 0;
 
@@ -139,7 +139,7 @@ const activarProtocoloUrgenciaWhile = (pacientes: Pacientes[]): boolean => {
   return activarProtocolo;
 };
 
-console.log("Activar protocolo:", activarProtocoloUrgenciaWhile(pacientes));
+console.log("Activar protocolo:", activarProtocoloUrgencia(pacientes));
 
 // Apartado 3 - El pediatra no puede atender hoy a los pacientes, queremos reasignar los pacientes asignados a la especialidad de pediatría a la de medico de familia.
 const reasignaPacientesAMedicoFamilia = (
